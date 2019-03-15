@@ -8,7 +8,7 @@ buildscript {
 
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.1.4'
+        classpath 'com.android.tools.build:gradle:3.3.2'
     }
     repositories {
         jcenter()
@@ -58,9 +58,8 @@ android {
     flavorDimensions "default"
 
 	compileSdkVersion 22
-	buildToolsVersion '26.0.2'
 
-     lintOptions {
+    lintOptions {
          checkReleaseBuilds false
          abortOnError false
      }
@@ -68,6 +67,8 @@ android {
     defaultConfig {
         versionCode 269
         versionName '2.8.4'
+        minSdkVersion 14
+        targetSdkVersion 21
     }
 
     signingConfigs {
