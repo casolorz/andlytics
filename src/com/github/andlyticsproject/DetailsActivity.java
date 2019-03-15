@@ -228,7 +228,7 @@ public class DetailsActivity extends BaseActivity implements DetailedStatsActivi
 					return;
 				}
 
-				activity.refreshStarted();
+				//activity.refreshStarted();
 			}
 
 			@Override
@@ -254,7 +254,7 @@ public class DetailsActivity extends BaseActivity implements DetailedStatsActivi
 					return;
 				}
 
-				activity.refreshFinished();
+			//	activity.refreshFinished();
 
 				if (error != null) {
 					Log.e(TAG, "Error replying to comment: " + error.getMessage(), error);
@@ -269,7 +269,7 @@ public class DetailsActivity extends BaseActivity implements DetailedStatsActivi
 				CommentsFragment commentsFargment = (CommentsFragment) getSupportFragmentManager()
 						.findFragmentByTag("comments_tab");
 				if (commentsFargment != null) {
-					commentsFargment.refreshComments();
+					//commentsFargment.refreshComments();
 				}
 			}
 		});

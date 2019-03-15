@@ -37,7 +37,7 @@ public class CommentsFragment extends Fragment implements StatsView<Comment>,
 
 	private static final String TAG = CommentsFragment.class.getSimpleName();
 
-	private static final int MAX_LOAD_COMMENTS = 20;
+	private static final int MAX_LOAD_COMMENTS = 40;
 
 	private static final int DB_LOADER_ID = 0;
 	private static final int REMOTE_LOADER_ID = 1;
